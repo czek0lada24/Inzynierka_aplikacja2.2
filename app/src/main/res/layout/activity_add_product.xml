@@ -4,56 +4,90 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AddProduct">
+    tools:context=".AddProduct"
+    android:background="#A5BF87"
+    >
 
-    <EditText
-        android:id="@+id/eanEdit"
+    <TextView
+        android:id="@+id/mozesz_dodac"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="15dp"
-        android:text="TEST"
+        android:textColor="@color/black"
+        android:layout_marginTop="50dp"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:text="@string/mo_esz_doda_zeskanowane_opakowanie_do_bazy"
+        android:textSize="30sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/nameEdit"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
+        app:layout_constraintStart_toStartOf="parent" />
     <EditText
         android:id="@+id/nameEdit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="15dp"
-        android:hint="Podaj nazwę produktu."
+        android:gravity="center"
+        android:layout_marginTop="75dp"
+        android:layout_marginBottom="60dp"
+        android:textAlignment="center"
+        android:hint="@string/wpisz_nazw_produktu"
+        android:textColorHint="#616161"
+        android:textColor="@color/black"
+        android:textStyle="italic"
+        android:textSize="20sp"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/eanEdit" />
-
+        app:layout_constraintTop_toBottomOf="@id/mozesz_dodac"
+        app:layout_constraintBottom_toTopOf="@id/nowybintv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
     <TextView
         android:id="@+id/nowybintv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:layout_marginStart="16dp"
+        android:text="@string/wybierz_rodzaj_opakowania_produktu"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/nameEdit"
+        app:layout_constraintBottom_toTopOf="@id/upewnij"
+        android:textColor="@color/black"
+        />
+    <TextView
+        android:id="@+id/upewnij"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="15dp"
-        android:text="Wybierz rodzaj opakowania produktu"
-        android:textSize="20dp"
+        android:text="@string/upewnij_si_do_jakiego_pojemnika_n_nale_y_wrzuci_to_opakowanie"
+        android:textAlignment="center"
+        android:textStyle="italic"
+        app:layout_constraintTop_toBottomOf="@id/nowybintv"
+        app:layout_constraintBottom_toTopOf="@id/spinner"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/nameEdit" />
-
+        android:textColor="#616161"
+        />
     <Spinner
         android:id="@+id/spinner"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="15dp"
         android:entries="@array/bin"
+        android:textColor="@color/black"
         app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintTop_toBottomOf="@id/upewnij"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/nowybintv" />
-
+        />
     <Button
         android:id="@+id/AddBtn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="300dp"
+        android:layout_height="75dp"
         android:text="Dodaj produkt"
         android:layout_marginTop="20dp"
         android:textStyle="bold"
         app:layout_constraintTop_toBottomOf="@id/spinner"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent" />

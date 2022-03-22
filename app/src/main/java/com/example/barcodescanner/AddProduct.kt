@@ -21,8 +21,9 @@ class AddProduct : AppCompatActivity() {
         val ean = intent.getStringExtra("EAN")
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_add_product)
+
         spinner.onItemSelectedListener = object : AdapterView.OnItemSelectedListener{
-            override fun onItemSelected(selected: AdapterView<*>?, view: View?, position: Int, id: Long) {
+            override fun onItemSelected(selected: AdapterView<*>, view: View?, position: Int, id: Long) {
                 bin = selected?.getItemAtPosition(position).toString()
             }
             override fun onNothingSelected(p0: AdapterView<*>?) {

@@ -21,14 +21,18 @@
         tools:targetApi="m">
         <activity
             android:name=".AddProduct"
-            android:exported="false" />
+            android:exported="false"
+            android:label="EcoScanner"
+            />
         <activity
             android:name=".Second"
-            android:exported="false" />
+            android:exported="false"
+            android:label="EcoScanner"/>
         <activity
             android:name=".MainActivity"
             android:exported="true"
-            android:screenOrientation="portrait">
+            android:screenOrientation="portrait"
+            android:label="EcoScanner">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

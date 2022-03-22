@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+
     <com.budiyev.android.codescanner.CodeScannerView
         android:id="@+id/scanner_view"
         android:layout_width="match_parent"
@@ -30,8 +31,9 @@
         android:id="@+id/tekst"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="ZESKANUJ KOD KRESKOWY"
-        android:textSize="30dp"
+        android:text="ZESKANUJ KOD KRESKOWY NA PRODUKCIE"
+        android:gravity="center"
+        android:textSize="25dp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

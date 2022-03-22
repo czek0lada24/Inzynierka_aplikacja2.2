@@ -22,9 +22,9 @@ class Second : AppCompatActivity() {
             nametv.text = name
             bintv.text = bin
             when(bin){
-                "Plastik"->image_type.setImageResource(R.mipmap.plastic_foreground)
+                "Metal i tworzywa sztuczne"->image_type.setImageResource(R.mipmap.plastic_foreground)
                 "Szkło" -> image_type.setImageResource(R.mipmap.glass_foreground)
-                "Metal" -> image_type.setImageResource(R.mipmap.metal_foreground)
+                "Odpady zmieszane" -> image_type.setImageResource(R.mipmap.metal_foreground)
                 "Papier" -> image_type.setImageResource(R.mipmap.paper_foreground)
             }
         }else if(message=="no_product"){
