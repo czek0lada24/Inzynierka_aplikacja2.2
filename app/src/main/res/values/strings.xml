@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">BarCode Scanner</string>
+    <string-array name="bin">
+        <item>Plastik</item>
+        <item>Szkło</item>
+        <item>Metal</item>
+        <item>Papier</item>
+    </string-array>
+</resources>
