@@ -29,10 +29,13 @@ class Second : AppCompatActivity() {
             }
         }else if(message=="no_product"){
             add_product.visibility = View.VISIBLE
+            nazwa_produktu.text=""
             nametv.text="Zeskanowany produkt nie występuje w bazie."
             nametv.textSize= 25F
-            bintv.text="Zeskanuj inny artykuł."
+            rodzaj_smietnika.text=""
+            bintv.text="Dodaj produkt lub zeskanuj inny."
             bintv.textSize = 25F
+            image_type.setImageResource(R.mipmap.brak)
             add_product.setOnClickListener{
                 Intent(this,AddProduct::class.java).also {
                     it.putExtra("EAN",ean)

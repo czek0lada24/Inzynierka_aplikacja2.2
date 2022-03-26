@@ -22,17 +22,17 @@
         <activity
             android:name=".AddProduct"
             android:exported="false"
-            android:label="EcoScanner"
+            android:label="Eco Scanner"
             />
         <activity
             android:name=".Second"
             android:exported="false"
-            android:label="EcoScanner"/>
+            android:label="Eco Scanner"/>
         <activity
             android:name=".MainActivity"
             android:exported="true"
             android:screenOrientation="portrait"
-            android:label="EcoScanner">
+            android:label="Eco Scanner">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

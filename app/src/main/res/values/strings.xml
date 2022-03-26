@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">BarCode Scanner</string>
+    <string name="app_name">Eco Scanner</string>
     <string name="upewnij_si_do_jakiego_pojemnika_n_nale_y_wrzuci_to_opakowanie">Upewnij się, do jakiego pojemnika \n należy wrzucić to opakowanie!</string>
     <string name="mo_esz_doda_zeskanowane_opakowanie_do_bazy">Możesz dodać zeskanowane \n opakowanie do bazy.</string>
     <string name="wybierz_rodzaj_opakowania_produktu">Wybierz rodzaj opakowania \n produktu:</string>
