@@ -29,9 +29,11 @@
 
     <TextView
         android:id="@+id/tekst"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="ZESKANUJ KOD KRESKOWY NA PRODUKCIE"
+        android:textAlignment="center"
+        android:background="#A5BF87"
+        android:text="ZESKANUJ KOD KRESKOWY \n NA PRODUKCIE"
         android:gravity="center"
         android:textSize="25dp"
         android:textStyle="bold"
