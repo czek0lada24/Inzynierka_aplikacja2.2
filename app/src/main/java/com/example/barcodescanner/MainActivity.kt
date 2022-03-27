@@ -62,10 +62,10 @@ class MainActivity :AppCompatActivity() {
         super.onRequestPermissionsResult(requestCode, permissions, grantResults)
         if (requestCode == 123){
             if(grantResults[0]==PackageManager.PERMISSION_GRANTED){
-                Toast.makeText(this, "Camera permisson granted", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "Camera permission granted", Toast.LENGTH_SHORT).show()
                 startScanning()
             }else{
-                Toast.makeText(this, "Camera permisson denied", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "Camera permission denied", Toast.LENGTH_SHORT).show()
             }
         }
     }
